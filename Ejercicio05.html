@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /* Diseñar un diagrama de flujo que permita ingresar una cantidad en MegaBytes y luego que 
+    muestre su conversión a GigaByte. 
+    1 GB = 1024 MB. */
+    let megas,gigas;
+    do{
+        megas=Number(prompt("Introduce la cantidad de megabytes que desea convertir a gigabytes: "));
+    }while(megas<=0);
+    gigas=megas/1024;
+    alert("La cantidad de gigabytes son: "+gigas);
+</script>
+<body>
+    
+</body>
+</html>

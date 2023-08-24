@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*Obtener la cantidad de dinero que recibirá un vendedor por concepto de comisiones por tres 
+ventas realizadas en el mes, y el total que recibirá en el mes por sueldo y comisión. Se sabe que 
+el vendedor recibe un sueldo base y un 10% extra por comisiones de todas sus ventas. */
+let sueldoBase,ventaUno,ventaDos,ventaTres;
+do{
+    sueldoBase=Number(prompt("Introduce el sueldo base"));
+    ventaUno=Number(prompt("Introduce el monto de la primera venta"));
+    ventaDos=Number(prompt("Introduce el monto de la segunda venta"));
+    ventaTres=Number(prompt("Introduce el monto de la tercera venta"));
+}while(sueldoBase<=0||ventaUno<=0||ventaDos<=0||ventaTres<=0);
+    let comisiones=(ventaUno+ventaDos+ventaTres)*0.1;
+    let total=sueldoBase+comisiones;
+    alert("El total de comisiones es: $"+comisiones+"\nel total de su sueldo es: $"+total);
+</script>
+<body>
+    
+</body>
+</html>

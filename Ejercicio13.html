@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* En una tienda se efectúa un descuento a los clientes dependiendo del monto de la compra, el 
+        descuento se efectúa con base en los siguientes criterios: */
+        let montoCompra;
+        let descuento;
+        let montoFinal;
+        do{
+            montoCompra=Number(prompt("Introduce el monto de la compra"));
+        }while(montoCompra<0)
+        if(montoCompra<=500)
+        {
+            descuento=0;
+        }
+        else if(montoCompra<=1000)
+        {
+            descuento=0.05;
+        }
+        else if(montoCompra<=7000)
+        {
+            descuento=0.11;
+        }
+        else if(montoCompra<=15000)
+        {
+            descuento=0.18;
+        }
+        else
+        {
+            descuento=0.25;
+        }
+        montoFinal=montoCompra-(montoCompra*descuento);
+        alert("El monto final a pagar es: "+montoFinal);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

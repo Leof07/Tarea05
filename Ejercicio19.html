@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /* Realizar un programa que pida 10 números los cuales serán almacenados en un vector, luego 
+    deberá mostrar cuanto es la suma de todos los elementos del vector. */
+    let acumulador=0;
+    let array=[];
+    for(i=1;i<=10;i++){
+        let numero=Number(prompt("Introduce un numero"));
+        array[i]=numero;
+        acumulador=acumulador+array[i];
+        
+    }
+    alert("La suma de los elementos del vector es: "+acumulador);
+    alert("el array contiene: "+array);
+</script>
+<body>
+    
+</body>
+</html>

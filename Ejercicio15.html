@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*Calcule el salario a recibir de un trabajador cuyo salario es calculado en función de las horas 
+    trabajadas y el valor por hora. El cálculo debe tener en cuenta un descuento de seguridad social 
+    que equivale al 9.45% para quienes laboran 40 horas o más y 15 % para quienes laboren menos 
+    de 40 horas. */
+    let horasTrabajadas,pagoHora;
+    do{
+        horasTrabajadas=Number(prompt("Introduce el total de horas trabajadas"));
+        pagoHora=Number(prompt("Introduce el pago por hora"));
+    }while(horasTrabajadas<=0||pagoHora<=0);
+    let pagoTotal;
+    if(horasTrabajadas<=40){
+        pagoTotal=horasTrabajadas*pagoHora-(horasTrabajadas*pagoHora*0.15);
+    }
+    else{
+        pagoTotal=horasTrabajadas*pagoHora-(horasTrabajadas*pagoHora*0.0945);
+    }
+    alert("El pago total es: $"+pagoTotal.toFixed(2));
+</script>
+<body>
+    
+</body>
+</html>

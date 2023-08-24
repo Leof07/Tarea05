@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*Realizar un programa que cuente con un vector de 5 elementos, deberá pedir ingresar 
+    números al usuario, pero solamente deberá almacenar en el vector si el número ingresado es par, 
+    por lo cual el programa deberá dejar de pedir números hasta que el vector este lleno, por último, 
+    mostrar el vector en pantalla. */
+    let vector=[];
+    let bandera=true;
+    while(bandera==true){
+        let numero=Number(prompt("Introduce un numero"));
+        if(numero%2==0){
+            vector.push(numero);
+        }
+        if(vector.length==5){
+            bandera=false;
+        }
+    }
+    alert("El vector contiene: "+vector);
+</script>
+<body>
+    
+</body>
+</html>

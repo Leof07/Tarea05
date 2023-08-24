@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /* Leer una nota y mostrar el resultado de acuerdo a la siguiente tabla. */
+    let nota;
+    let resultado;
+    do{
+        nota=Number(prompt("Introduce la nota del alumno"));
+    }while(nota<0 || nota>10)
+    if(nota<6){
+        resultado="E";
+    }
+    else if(nota<7){
+        resultado="D";
+    }
+    else if(nota<8){
+        resultado="C";
+    }
+    else if(nota<9){
+        resultado="B";
+    }
+    else{
+        resultado="A";
+    }
+    alert("La nota del alumno es: "+resultado);
+</script>
+<body>
+    
+</body>
+</html>

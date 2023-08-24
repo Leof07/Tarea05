@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*Una librería ofrece descuentos por volumen, realice un programa que reciba el precio del 
+    libro y la cantidad de libros, luego que muestre el total a pagar considerando si aplica o no 
+    descuento según el siguiente detalle: 
+    ✔ 3% a partir de tres libros. 
+    ✔ 5% si son más de tres libros. 
+    ✔ 10% si son más de 10. */
+    let precioLibro;
+    let cantidadLibros;
+    do{
+        precioLibro=Number(prompt("Introduce el precio del libro"));
+    }while(precioLibro<=0);
+    do{
+        cantidadLibros=Number(prompt("Introduce la cantidad de libros"));
+    }while(cantidadLibros<=0);
+    let descuento;
+    let totalPagar;
+    if(cantidadLibros<3){
+        descuento=0;
+    }
+    else if(cantidadLibros==3){
+        descuento=0.03;
+    }
+    else if(cantidadLibros<=10){
+        descuento=0.05;
+    }
+    else{
+        descuento=0.1;
+    }
+    totalPagar=(precioLibro*cantidadLibros)-(precioLibro*cantidadLibros*descuento);
+    alert("El total a pagar es: $"+totalPagar);
+</script>
+<body>
+    
+</body>
+</html>

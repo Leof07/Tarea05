@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //2. Realizar un programa que calcule el área de un trapecio
+    let baseUno;
+    let baseDos;
+    let altura;
+    do{
+        baseUno=Number(prompt("Introduce la base del trapecio"));
+
+    } while(baseUno<=0);
+    do{
+        baseDos=Number(prompt("Introduce la segunda base del trapecio"));
+
+    } while(baseDos<=0);
+    do{
+        altura=Number(prompt("Introduce la altura del trapecio"));
+
+    }while(altura<=0);
+    let area=((baseUno+baseDos)/2)*altura;
+    alert("El area del trapecio es: "+area);
+</script>
+<body>
+    
+</body>
+</html>

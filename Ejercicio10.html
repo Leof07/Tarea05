@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*Realizar un programa que lea un número entero (edad) y que muestre en pantalla un mensaje 
+    de acuerdo a la siguiente tabla. */
+    let edad;
+    do{
+        edad=Number(prompt("Introduce la edad"));
+    }while(edad<=0 || edad>110)
+    let categoria;
+    if(edad<=12){
+        categoria="Niño";
+    }
+    else if(edad<18){
+        categoria="Adolescente";
+    }
+    else if(edad<60){
+        categoria="Adulto";
+    }
+    else{
+        categoria="Adulto mayor";
+    }
+    alert("La categoria es: "+categoria);
+</script>
+<body>
+    
+</body>
+</html>

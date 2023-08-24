@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*1. Elaborar un diagrama de flujo que permita calcular la longitud de la hipotenusa con catetos 
+        conocidos. */
+        let catetoA;
+        let catetoB;
+        do{
+            catetoA=Number(prompt("Introduce el cateto Adyasente"));
+
+        }while(catetoA<=0);
+        do{
+            catetoB=Number(prompt("Introduce el cateto Opuesto"));
+
+        }while(catetoB<=0);
+        let hipotenusa=(catetoA**2+catetoB**2)**(1/2);
+        alert("La hipotenusa es: "+hipotenusa.toFixed(2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

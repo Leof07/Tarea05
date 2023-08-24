@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*18. Hacer un programa que guarde 20 números enteros ingresados por el usuario en un vector, y 
+    que luego muestre el mayor, el menor, el promedio y además muestre a todos los números 
+    contenidos dentro del vector. */
+    let array=[];
+    let minimo,maximo,acumulador=0;
+    for(i=1;i<=20;i++){
+        let numero=Number(prompt("Introduce un numero entero"));
+        acumulador=acumulador+numero;
+        if(i==1){
+            minimo=numero;
+            maximo=numero;
+        }
+        array[i]=numero;
+        if(numero<minimo){
+            minimo=numero;
+        }
+        if(numero>maximo){
+            maximo=numero;
+        }
+    }
+    alert("El numero minimo es: "+minimo);
+    alert("El numero maximo es: "+maximo);
+    alert("Los elementos en el array son: "+array);
+    alert("el promedio es: "+acumulador/20);
+</script>
+<body>
+    
+</body>
+</html>
